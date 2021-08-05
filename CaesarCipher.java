@@ -11,21 +11,10 @@ public class CaesarCipher {
         String encryptedString = encryptString(string, rotateValue);
         System.out.println("Encrypted String: " + encryptedString);
     }
-
-    public static char[] getRotatedAlphabets(int rotateValue) {
-
-        String alphabets = "abcdefghijklmnopqrstuvwxyz";
-        String subString1 = alphabets.substring(0, rotateValue);
-        String subString2 = alphabets.substring(rotateValue, alphabets.length());
-        String rotatedAlphabets = subString2 + subString1;
-
-        return rotatedAlphabets.toCharArray();
-    }
-
+    
     public static String encryptString(String string, int rotateValue) {
         
         char[] rotateAlphabets = getRotatedAlphabets(rotateValue);
-        
         
         string = string.toLowerCase();
         char[] stringArray = string.toCharArray();
@@ -39,5 +28,15 @@ public class CaesarCipher {
         }
 
         return encryptedString;
+    }
+
+    public static char[] getRotatedAlphabets(int rotateValue) {
+
+        String alphabets = "abcdefghijklmnopqrstuvwxyz";
+        String subString1 = alphabets.substring(0, rotateValue);
+        String subString2 = alphabets.substring(rotateValue, alphabets.length());
+        String rotatedAlphabets = subString2 + subString1;
+
+        return rotatedAlphabets.toCharArray();
     }
 }
