@@ -6,7 +6,7 @@
 */
 
 class Solution {
-    public int myAtoi(String s) {
+    public static int myAtoi(String s) {
         
         boolean start = false;
         int sign = 1;
@@ -82,5 +82,23 @@ class Solution {
         }
         
         return value * sign;
+    }
+    
+    public static void main(String[] args) {
+        
+        String s1 = "+-12";
+        String s2 = "-333   asdfasdf ";
+        String s3 = "-3.121221";
+        String s4 = "9458228912837698";
+        
+        int v1 = myAtoi(s1);
+        int v2 = myAtoi(s2);
+        int v3 = myAtoi(s3);
+        int v4 = myAtoi(s4);
+        
+        System.out.println(s1 + " : " + v1);
+        System.out.println(s2 + " : " + v2);
+        System.out.println(s3 + " : " + v3);
+        System.out.println(s4 + " : " + v4);
     }
 }
