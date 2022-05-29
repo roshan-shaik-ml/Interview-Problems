@@ -1,3 +1,8 @@
+/*
+    Author: Shaik Faizan Roshan Ali
+    Date: 30th May 2022
+    Link: https://leetcode.com/problems/is-graph-bipartite/
+*/
 import java.util.*;
 public class Solution {
     
