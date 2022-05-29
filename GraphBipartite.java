@@ -104,7 +104,6 @@ class UnionFind {
                     rank.set(parent2, rank.get(parent2)+1);
                 }
             }        
-        }
-        
+        }  
     }  
 }
