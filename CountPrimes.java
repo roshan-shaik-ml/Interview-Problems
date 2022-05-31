@@ -3,12 +3,13 @@
   Date: 31st May 2022
   Link: https://leetcode.com/problems/count-primes/
 **/
-class Solution {
+import java.util.Arrays;
+public class Solution {
     /*
         Seive method for counting primes
     
     **/
-    public boolean[] seive(int limit) {
+    public static boolean[] seive(int limit) {
         
         boolean[] isPrime = new boolean[limit+1];
         Arrays.fill(isPrime, true);
@@ -31,7 +32,7 @@ class Solution {
         return isPrime;
     } 
     
-    public int countPrimes(int n) {
+    public static int countPrimes(int n) {
         
         if(n == 0 || n == 1)  
             return 0;
@@ -45,5 +46,10 @@ class Solution {
                 count += 1;
         }
         return count;
+    }
+    public static void main(String[] args) {
+        
+        int primes = countPrimes(100);
+        System.out.println("Total primes in range the 100 are " + primes);
     }
 }
