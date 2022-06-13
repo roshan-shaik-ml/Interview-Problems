@@ -2,7 +2,7 @@
   Author: Shaik Faizan Roshan Ali
   Date: 13th June 2022
   Link: https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/
-  Algorithm: This is a straight forward bfs approach for finding the nearest exit (i.e. border of the matrix)
+  Algorithm: This is a straight forward BFS approach for finding the nearest exit (i.e. border of the matrix)
   NOTE: BFS has relatively better time efficient approach in this scenario compared to a DFS
 **/
 class Solution {
