@@ -13,6 +13,8 @@
     
     Since, we know the number of unique BST for n = 2. We can directly substitute from the DP array 
     and add the values of all combinations.
+    
+    NOTE: Do read up about Catalan number (i.e another mathematical approach for finding this solution)
 **/
 public class Solution {
     
