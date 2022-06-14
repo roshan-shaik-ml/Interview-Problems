@@ -22,21 +22,22 @@ public class Solution {
         
         int[] dp = new int[n+1];
         
+        /* Standard values for n = 0 and n = 1*/
         dp[0] = 1;
         dp[1] = 1;
         
+        /* Outer loop for values of find all the unique BST values upto n */
         for(int i = 2; i <= n; i++) {
             
             int left = 0;
             int right = i-1;
-            
+            /* For finding different combinations of left and right subtree at each n value */
             while(left <= i - 1) {
                 
                 dp[i] += dp[left] * dp[right];
                 left++;
                 right--;
-            }
-                
+            }       
         }
         
         return dp[n];
