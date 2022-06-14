@@ -11,8 +11,8 @@
     (root) 20 -> Left (1) [10]     | Right -> (1) [30]
     (root) 30 -> Left (2) [10, 20] | Right -> (0) []
     
-    Since, we know the number of unique BST for n = 2. We can directly substitute from the DP array 
-    and add the values of all combinations.
+    Since, we know the number of unique BST for n = 2, n = 1 & n = 0. We can directly substitute from
+    the DP array and add the values of all combinations.
     
     NOTE: Do read up about Catalan number (i.e another mathematical approach for finding this solution)
 **/
