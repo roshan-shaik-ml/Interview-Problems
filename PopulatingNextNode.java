@@ -2,7 +2,7 @@
     Date: 17th June 2022
     Author: Shaik Faizan Roshan Ali
     Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
-    Description: Connect each level nodes to their next node in the same level using a pointer.
+    Description: Connect each level nodes to the next node in same level in a perfect binary tree.
     Algorithm: Do BFS traversal for each level and connect the pointer from left to right node in same level. 
 **/
 
